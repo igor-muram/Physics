@@ -35,7 +35,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lengthL->setText(QString("Расстояние от диска до стержня: %1 м").arg(ui->lengthS->value() * 0.01));
     ui->phi_dotL->setText(QString("Начальная скорость прецессии: %1 рад/c").arg(ui->phi_dotS->value() * 0.1));
     ui->psi_dotL->setText(QString("Скорость вращения диска: %1 рад/c").arg(ui->psi_dotS->value()));
-    ui->thetaL->setText(QString("Наклон относительно вертикальной оси: %1 град").arg(round(ui->thetaS->value() * 0.001 / DegToRad)));
+    ui->thetaL->setText(QString("Наклон относительно вертикальной оси: %1°").arg(round(ui->thetaS->value() * 0.001 / DegToRad)));
 
     timer = new QTimer();
     timer->setInterval(16);
@@ -101,7 +101,9 @@ void MainWindow::Update()
         for (auto plot : plots)
             plot->Update();
 
-        traj->Draw(gyro->GetDiskPos() * 1.2);
+        QVector3D temp = gyro->GetDiskPos();
+        temp.normalize();
+        traj->Draw(temp * 3.072);
     }
 
     if (isTimerEnabled)
@@ -177,7 +179,7 @@ void MainWindow::on_stop_clicked()
     ui->lengthL->setText(QString("Расстояние от диска до стержня: %1 м").arg(gyro->GetLength()));
     ui->phi_dotL->setText(QString("Начальная скорость прецессии: %1 рад/c").arg(gyro->GetPhiDot()));
     ui->psi_dotL->setText(QString("Скорость вращения диска: %1 рад/c").arg(gyro->GetPsiDot()));
-    ui->thetaL->setText(QString("Наклон относительно вертикальной оси: %1 град").arg(round(gyro->GetTheta() / DegToRad)));
+    ui->thetaL->setText(QString("Наклон относительно вертикальной оси: %1°").arg(round(gyro->GetTheta() / DegToRad)));
 
     for (auto plot : plots)
         plot->Restart();
@@ -218,7 +220,7 @@ void MainWindow::on_phi_dotS_valueChanged(int value)
 void MainWindow::on_thetaS_valueChanged(int value)
 {
     gyro->SetTheta(value * 0.001);
-    ui->thetaL->setText(QString("Наклон относительно вертикальной оси: %1 град").arg(round(gyro->GetTheta() / DegToRad)));
+    ui->thetaL->setText(QString("Наклон относительно вертикальной оси: %1°").arg(round(gyro->GetTheta() / DegToRad)));
 
 }
 

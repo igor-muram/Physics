@@ -41,7 +41,7 @@ Trajectory::Trajectory(Qt3DCore::QEntity *rootEntity)
 
     line = new Qt3DRender::QGeometryRenderer();
     line->setGeometry(geometry);
-    line->setPrimitiveType(Qt3DRender::QGeometryRenderer::LineStrip);
+    line->setPrimitiveType(Qt3DRender::QGeometryRenderer::Points);
 
     material = new Qt3DExtras::QPhongMaterial(rootEntity);
     material->setAmbient(QColor(0, 0, 0, 255));
@@ -53,6 +53,8 @@ Trajectory::Trajectory(Qt3DCore::QEntity *rootEntity)
 
 void Trajectory::Draw(QVector3D point)
 {   
+    line->setPrimitiveType(Qt3DRender::QGeometryRenderer::LineStrip);
+
     dots.append(point.x());
     dots.append(point.y());
     dots.append(point.z());
