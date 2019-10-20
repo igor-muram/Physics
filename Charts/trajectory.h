@@ -19,6 +19,7 @@ public:
 
     void Draw(QVector3D point);
     void Clear(QVector3D point);
+    void SetDot(QVector3D point);
 
 private:
     Qt3DCore::QEntity *rootEntity;

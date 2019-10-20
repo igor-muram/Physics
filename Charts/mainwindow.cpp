@@ -1,6 +1,5 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-#include "drawline.h"
 #include "plot.h"
 #include "gyroscope.h"
 #include "help.h"
@@ -52,6 +51,9 @@ MainWindow::MainWindow(QWidget *parent) :
     addObject(":/Res/Models/floor.obj", ":/Res/Models/floorMat.jpg", QColor::fromRgb(160, 160, 160), 8);
 
     traj = new Trajectory(baseEntity);
+    QVector3D pos = gyro->GetDiskPos();
+    pos.normalize();
+    traj->SetDot(pos * 3.08);
 }
 
 MainWindow::~MainWindow()
@@ -101,9 +103,9 @@ void MainWindow::Update()
         for (auto plot : plots)
             plot->Update();
 
-        QVector3D temp = gyro->GetDiskPos();
-        temp.normalize();
-        traj->Draw(temp * 3.072);
+        QVector3D pos = gyro->GetDiskPos();
+        pos.normalize();
+        traj->Draw(pos * 3.08);
     }
 
     if (isTimerEnabled)
@@ -184,7 +186,9 @@ void MainWindow::on_stop_clicked()
     for (auto plot : plots)
         plot->Restart();
 
-    traj->Clear(gyro->GetDiskPos() * 1.2);
+    QVector3D pos = gyro->GetDiskPos();
+    pos.normalize();
+    traj->Clear(pos * 3.08);
 }
 
 void MainWindow::on_lengthS_valueChanged(int value)
@@ -222,6 +226,10 @@ void MainWindow::on_thetaS_valueChanged(int value)
     gyro->SetTheta(value * 0.001);
     ui->thetaL->setText(QString("Наклон относительно вертикальной оси: %1°").arg(round(gyro->GetTheta() / DegToRad)));
 
+    QVector3D pos = gyro->GetDiskPos();
+    pos.normalize();
+    traj->Clear(pos * 3.08);
+    traj->SetDot(pos * 3.08);
 }
 
 void MainWindow::on_action_triggered()
@@ -244,7 +252,7 @@ void MainWindow::on_action_2_triggered()
 
 void MainWindow::on_action_3_triggered()
 {
-    Plot *plot = new Plot([this]()->double{ return gyro->GetTime(); },
+    Plot *plot = new Plot([this]()->double{ return gyro->GetTime() * 3; },
                           [this]()->double{ return gyro->GetTheta(); },
                           "Время, с",
                           "Угол нутации, рад",
@@ -257,7 +265,7 @@ void MainWindow::on_action_3_triggered()
 
 void MainWindow::on_action_5_triggered()
 {
-    Plot *plot = new Plot([this]()->double{ return gyro->GetTime(); },
+    Plot *plot = new Plot([this]()->double{ return gyro->GetTime() * 3; },
                           [this]()->double{ return gyro->GetEk(); },
                           "Время, с",
                           "Кинетическая энергия, Дж",
@@ -270,7 +278,7 @@ void MainWindow::on_action_5_triggered()
 
 void MainWindow::on_action_6_triggered()
 {
-    Plot *plot = new Plot([this]()->double{ return gyro->GetTime(); },
+    Plot *plot = new Plot([this]()->double{ return gyro->GetTime() * 3; },
                           [this]()->double{ return gyro->GetU(); },
                           "Время, с",
                           "Потенциальная энергия, Дж",
@@ -283,7 +291,7 @@ void MainWindow::on_action_6_triggered()
 
 void MainWindow::on_action_7_triggered()
 {
-    Plot *plot = new Plot([this]()->double{ return gyro->GetTime(); },
+    Plot *plot = new Plot([this]()->double{ return gyro->GetTime() * 3; },
                           [this]()->double{ return gyro->GetE(); },
                           "Время, с",
                           "Полная энергия, Дж",
