@@ -23,7 +23,7 @@ You can <a href="https://github.com/igor-muram/Physics/raw/master/Charts/Publish
 
 <ul>
   <li>A <a href="https://storage.tusur.ru/files/131947/essu-19-part-2.pdf#page=171" target="_blank">scientific article</a> was written on <b>this app</b> for an journal indexed in RSCI (Russian Science Citation Index).</li>
-  <li>Another <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1488/1/012005/pdf" target="_blank">scientific article</a> was written on web version of this app for an English-language journal indexed in Scopus.</li>
+  <li>Another <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1488/1/012005/pdf" target="_blank">scientific article</a> was written on web version of this app for an English-language journal indexed in Scopus (Journal of physics).</li>
 </ul>
 
 ## Main window
