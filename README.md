@@ -40,4 +40,4 @@ You can <a href="https://github.com/igor-muram/Physics/raw/master/Charts/Publish
 
 ## Model
 
-![Group 68](https://user-images.githubusercontent.com/54866075/126542346-24e7dcbf-50b0-4610-86f4-955d33e125a8.png)
+![Group 68](https://user-images.githubusercontent.com/54866075/126878418-b8254328-1b48-4f26-a7a9-7a338dff7c91.png)
