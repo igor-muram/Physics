@@ -5,26 +5,20 @@ You can <a href="https://github.com/igor-muram/Physics/raw/master/Charts/Publish
 
 ## Web version
 
-<ul>
-  <li>This desktop application also has a web version.</li>
-  <li>The repository with the web version is available <a href="https://github.com/igor-muram/WebPhysics" target="_blank">here</a>.</li>
-  <li>You can <a href="https://golab.nstu.ru" target="_blank">watch</a> web version of the application.</li>
-</ul>
+* This desktop application also has a web version.
+* The repository with the web version is available <a href="https://github.com/igor-muram/WebPhysics" target="_blank">here</a>.
+* You can <a href="https://golab.nstu.ru" target="_blank">watch</a> web version of the application.
   
 ## Publication in Go-Lab
 
-<ul>
-  <li>The web version of the virtual laboratory was created in the process of cooperation with one of the biggest European specialists in multimedia education, <a href="https://people.utwente.nl/a.j.m.dejong" target="_blank">Ton de Jong</a>.</li>
-  <li>The web application was published on <a href="https://www.golabz.eu" target="_blank">Go-Lab</a>, a major international Internet platform focused on the introduction of innovative learning technologies using virtual online laboratories.</li>
-  <li>The Go-Lab publication is available <a href="https://www.golabz.eu/lab/modeling-of-gyroscope-precession-and-nutation" target="_blank">here</a>.</li>
-</ul>
+* The web version of the virtual laboratory was created in the process of cooperation with one of the biggest European specialists in multimedia education, <a href="https://people.utwente.nl/a.j.m.dejong" target="_blank">Ton de Jong</a>.
+* The web application was published on <a href="https://www.golabz.eu" target="_blank">Go-Lab</a>, a major international Internet platform focused on the introduction of innovative learning technologies using virtual online laboratories.
+* The Go-Lab publication is available <a href="https://www.golabz.eu/lab/modeling-of-gyroscope-precession-and-nutation" target="_blank">here</a>.
   
 ## Publications in Journals
 
-<ul>
-  <li>A <a href="https://storage.tusur.ru/files/131947/essu-19-part-2.pdf#page=171" target="_blank">scientific article</a> was written on <b><i>this app</i></b> for an journal indexed in RSCI (Russian Science Citation Index).</li>
-  <li>Another <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1488/1/012005/pdf" target="_blank">scientific article</a> was written on <b><i>web version</i></b> of this app for an English-language journal indexed in Scopus (Journal of physics).</li>
-</ul>
+* A <a href="https://storage.tusur.ru/files/131947/essu-19-part-2.pdf#page=171" target="_blank">scientific article</a> was written on <b><i>this app</i></b> for an journal indexed in RSCI (Russian Science Citation Index).
+* Another <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1488/1/012005/pdf" target="_blank">scientific article</a> was written on <b><i>web version</i></b> of this app for an English-language journal indexed in Scopus (Journal of physics).
 
 ## Main window
 
