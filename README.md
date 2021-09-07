@@ -30,9 +30,21 @@ You can <a href="https://github.com/igor-muram/Physics/raw/master/Charts/Publish
 
 ![image](https://user-images.githubusercontent.com/54866075/126540525-ac400bc9-398c-49db-91a1-16784abe6eb9.png)
 
+![image](https://user-images.githubusercontent.com/54866075/132312228-a5e0fa08-efc5-4a6b-a4ae-67c7bb5c7ca0.png)
+
 ## Main window with popup windows
 
 ![image](https://user-images.githubusercontent.com/54866075/126540952-de595ad2-459a-49bf-bc88-ec26c5cf86ae.png)
+
+## Popup windows
+
+![image](https://user-images.githubusercontent.com/54866075/132312316-375669d5-5662-408f-b977-d729cff22f50.png)
+
+![image](https://user-images.githubusercontent.com/54866075/132312369-5b5e09bf-dd01-4392-b155-314093065073.png)
+
+![image](https://user-images.githubusercontent.com/54866075/132312448-7896a22b-a650-4ab2-a612-66be80500c38.png)
+
+![image](https://user-images.githubusercontent.com/54866075/132312592-1201cd9b-e004-42b1-8374-33e8c047337f.png)
 
 ## Interface
 
