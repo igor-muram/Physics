@@ -1,7 +1,7 @@
 # Virtual physical laboratory
 Virtual physical laboratory with  modeling and three-dimensional dynamic visualization of precession and nutation of gyroscope in real-time.
 
-You can <a href="https://github.com/igor-muram/Physics/raw/master/Charts/Publish/Прецессия%20и%20нутация%20гироскопа.exe" target="_blank">download</a> and watch the created application.
+You can [download](https://github.com/igor-muram/Physics/raw/master/Charts/Publish/Прецессия%20и%20нутация%20гироскопа.exe) and watch the created application.
 
 ## Technologies
 
@@ -12,19 +12,19 @@ You can <a href="https://github.com/igor-muram/Physics/raw/master/Charts/Publish
 ## Web version
 
 * This desktop application also has a web version.
-* The repository with the web version is available <a href="https://github.com/igor-muram/WebPhysics" target="_blank">here</a>.
-* You can <a href="https://golab.nstu.ru" target="_blank">watch</a> web version of the application.
+* The repository with the web version is available [here](https://github.com/igor-muram/WebPhysics).
+* You can [watch](https://golab.nstu.ru) web version of the application.
   
 ## Publication in Go-Lab
 
-* The web version of the virtual laboratory was created in the process of cooperation with one of the biggest European specialists in multimedia education, <a href="https://people.utwente.nl/a.j.m.dejong" target="_blank">Ton de Jong</a>.
-* The web application was published on <a href="https://www.golabz.eu" target="_blank">Go-Lab</a>, a major international Internet platform focused on the introduction of innovative learning technologies using virtual online laboratories.
-* The Go-Lab publication is available <a href="https://www.golabz.eu/lab/modeling-of-gyroscope-precession-and-nutation" target="_blank">here</a>.
+* The web version of the virtual laboratory was created in the process of cooperation with one of the biggest European specialists in multimedia education, [Ton de Jong](https://people.utwente.nl/a.j.m.dejong).
+* The web application was published on [Go-Lab](https://www.golabz.eu), a major international Internet platform focused on the introduction of innovative learning technologies using virtual online laboratories.
+* The Go-Lab publication is available [here](https://www.golabz.eu/lab/modeling-of-gyroscope-precession-and-nutation).
   
 ## Publications in Journals
 
-* A <a href="https://storage.tusur.ru/files/131947/essu-19-part-2.pdf#page=171" target="_blank">scientific article</a> was written on <b><i>this app</i></b> for an journal indexed in RSCI (Russian Science Citation Index).
-* Another <a href="https://iopscience.iop.org/article/10.1088/1742-6596/1488/1/012005/pdf" target="_blank">scientific article</a> was written on <b><i>web version</i></b> of this app for an English-language journal indexed in Scopus (Journal of physics).
+* A [scientific article](https://storage.tusur.ru/files/131947/essu-19-part-2.pdf#page=171) was written on <b><i>this app</i></b> for an journal indexed in RSCI (Russian Science Citation Index).
+* Another [scientific article](https://iopscience.iop.org/article/10.1088/1742-6596/1488/1/012005/pdf) was written on <b><i>web version</i></b> of this app for an English-language journal indexed in Scopus (Journal of physics).
 
 ## Main window
 
